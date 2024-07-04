@@ -3,6 +3,9 @@ import Button from "../Button/button";
 import "./taskForm.css";
 
 function TaskForm() {
+  const daysArray = Array.from({ length: 31 }, (_, i) => i + 1);
+  const monthsArray = Array.from({ length: 12 }, (_, i) => i + 1);
+  const yearsArray = Array.from({ length: 26 }, (_, i) => 2025 + i);
   return (
     <form className="task-form">
       <h2>Nouvelle tâche</h2>
@@ -13,13 +16,25 @@ function TaskForm() {
       <div className="date_selection">
         <p> Date de fin </p>
         <select>
-          <option value="03">03</option>
+          {daysArray.map(day => (
+            <option key={day} value={String(day).padStart(2, '0')}>
+              {String(day).padStart(2, '0')}
+            </option>
+          ))}
         </select>
         <select>
-          <option value="10">10</option>
+        {monthsArray.map(months => (
+            <option key={months} value={String(months).padStart(2, '0')}>
+              {String(months).padStart(2, '0')}
+            </option>
+          ))}
         </select>
         <select>
-          <option value="2025">2025</option>
+        {yearsArray.map(years => (
+            <option key={years} value={String(years).padStart(2, '0')}>
+              {String(years).padStart(2, '0')}
+            </option>
+          ))}
         </select>
       </div>
       <div className="priority">
