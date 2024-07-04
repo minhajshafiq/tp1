@@ -1,0 +1,28 @@
+.task_list {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .task_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .task_text {
+    margin: 0 0 1rem;
+    padding-left: 2rem;
+    font-size: 0.9em;
+    color: #666;
+    text-align: left
+
+  }
+  
+  .task_list button {
+    align-self: flex-start;
+    width: 20%;
+    cursor: pointer;
+  }

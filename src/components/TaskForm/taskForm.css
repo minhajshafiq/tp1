@@ -1,0 +1,59 @@
+.task-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .task-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: left;
+  }
+  
+  .input_newTask {
+    margin-bottom: 20px;
+  }
+  
+  .input_newTask input, .input_newTask textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .date_selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .date_selection select {
+    padding: 10px;
+    border: 1.5px solid #000000;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  .priority {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .priority label {
+    font-size: 1em;
+  }
+  
+  .priority input {
+    margin-right: 5px;
+  }
+  
+  .task-form button {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: 30%;
+  }
